@@ -128,7 +128,8 @@ complexity:
     threshold: 600
   LongMethod:
     active: true
-    threshold: 200 # Can't ignore @Composable functions
+    threshold: 200
+    ignoreAnnotatedFunctions: ['Preview', 'Composable']
   LongParameterList:
     active: false
     functionThreshold: 6
