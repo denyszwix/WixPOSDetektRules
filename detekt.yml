@@ -129,7 +129,7 @@ complexity:
   LongMethod:
     active: true
     threshold: 200
-    ignoreAnnotatedFunctions: ['Preview', 'Composable']
+    ignoreAnnotated: ['Preview', 'Composable']
   LongParameterList:
     active: false
     functionThreshold: 6
@@ -625,10 +625,10 @@ style:
     maxChainedCalls: 5
   MaxLineLength:
     active: true
-    maxLineLength: 120
+    maxLineLength: 150
     excludePackageStatements: true
     excludeImportStatements: true
-    excludeCommentStatements: false
+    excludeCommentStatements: true
     excludeRawStrings: true
   MayBeConst:
     active: true
@@ -875,7 +875,7 @@ formatting:
     indentSize: 4
   MaximumLineLength:
     active: true
-    maxLineLength: 120
+    maxLineLength: 150
     ignoreBackTickedIdentifier: false
   ModifierListSpacing:
     active: true
@@ -1042,7 +1042,7 @@ formatting:
     active: true
     autoCorrect: true
   Wrapping:
-    active: true
+    active: false
     autoCorrect: true
     indentSize: 4
     maxLineLength: 120
